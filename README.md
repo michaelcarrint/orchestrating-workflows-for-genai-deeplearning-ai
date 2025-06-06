@@ -95,6 +95,7 @@ This repository contains the following files and folders:
 - Course: Orchestrating Workflows for GenAI Applications
 - [Airflow Documentation](https://airflow.apache.org/docs/apache-airflow/stable/index.html)
 - [Airflow guides and tutorials](https://www.astronomer.io/docs/learn/)
+- [Astro free trial](https://www.astronomer.io/lp/signup/?utm_source=deeplearning-ai&utm_medium=content&utm_campaign=genai-course-6-25): Sign up for a free trial of Astro to deploy your dags to Astronomer.
 
 #### Resources by lesson
 
