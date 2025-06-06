@@ -90,3 +90,40 @@ This repository contains the following files and folders:
 - plugins: Add custom Airflow plugins for your project to this file.
 
 
+### Resources
+
+- Course: Orchestrating Workflows for GenAI Applications
+- [Airflow Documentation](https://airflow.apache.org/docs/apache-airflow/stable/index.html)
+- [Airflow guides and tutorials](https://www.astronomer.io/docs/learn/)
+
+#### Resources by lesson
+
+- Lesson 2:
+    - [Weaviate Short Course - Vector Databases: from Embeddings to Applications](https://www.deeplearning.ai/short-courses/vector-databases-embeddings-applications/)
+    - [Weaviate Short Course - Building Multimodal Search and RAG](https://www.deeplearning.ai/short-courses/building-multimodal-search-and-rag/)
+    - [Weaviate Documentation](https://weaviate.io/developers/weaviate)
+- Lesson 3:
+    - [Introduction to the TaskFlow API and Airflow decorators](https://www.astronomer.io/docs/learn/airflow-decorators/): Learn more about decorators generally in Python and specifically in Airflow.
+    - [Manage task and task group dependencies in Airflow](https://www.astronomer.io/docs/learn/managing-dependencies/): Learn more about setting dependencies between tasks using the `chain` function and other methods.
+    - [Airflow Operators](https://www.astronomer.io/docs/learn/what-is-an-operator): Learn more about operator classes which can be used alongside `@task` to create Airflow tasks.
+- Lesson 4:
+    - [Connections & Hooks in the Airflow documentation](https://airflow.apache.org/docs/apache-airflow/stable/authoring-and-scheduling/connections.html)
+    - [Airflow Weaviate Provider Package](https://airflow.apache.org/docs/apache-airflow-providers-weaviate/stable/index.html): Documentation of the Airflow Weaviate Provider Package which includes the `WeaviateHook`.
+    - [Airflow Hooks](https://www.astronomer.io/docs/learn/what-is-a-hook/): Learn about Airflow hooks like the `WeaviateHook`.
+    - [Manage connections in Apache Airflow](https://www.astronomer.io/docs/learn/connections): Learn about the different ways to connect Airflow to other tools.
+    - [Strategies for custom XCom backends in Airflow](https://www.astronomer.io/docs/learn/custom-xcom-backend-strategies/): Learn how to save data that is passed between tasks in different storage systems.
+- Lesson 5:
+    - [Schedule DAGs in Apache Airflow®](https://www.astronomer.io/docs/learn/scheduling-in-airflow/): Learn all the different ways of scheduling Airflow dags.
+    - [DAG-level parameters in Airflow](https://www.astronomer.io/docs/learn/airflow-dag-parameters/): A comprehensive list of dag parameters in Airflow.
+    - [Assets and data-aware scheduling in Airflow](https://www.astronomer.io/docs/learn/airflow-datasets/): Learn how to created advanced data-aware schedules using `Asset`s in Airflow.
+    - [Access the Apache Airflow context](https://www.astronomer.io/docs/learn/airflow-context/): Learn how to interact with the Airflow context dictionary retrieved with `**context`.
+    - [Create and use params in Airflow](https://www.astronomer.io/docs/learn/airflow-params/): Learn how to create advanced `params` dictionaries for your Airflow dags.
+    - [Airflow REST API - Create Asset Event](https://airflow.apache.org/docs/apache-airflow/stable/stable-rest-api-ref.html#operation/create_asset_event): You can update Assets from outside of Airflow using the Airflow REST API.
+- Lesson 6:
+    - [Create dynamic Airflow tasks](https://www.astronomer.io/docs/learn/dynamic-tasks/): Learn all about dynamic task mapping in Airflow.
+    - Tip: you can limit the number of concurrently running mapped task instances using the task-level parameters `max_active_tis_per_dag` and `max_active_tis_per_dagrun`.
+    - [Airflow configuration reference - AIRFLOW__CORE__MAX_MAP_LENGTH](https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#max-map-length): By default you can have up to 1024 dynamically mapped instances per task. Use this configuration environment variable to modify that limit.
+- Lesson 7:
+    - [Airflow trigger rules](https://www.astronomer.io/docs/learn/airflow-trigger-rules/): A reference of all available trigger rules.
+    - [Manage Apache Airflow® DAG notifications](https://www.astronomer.io/docs/learn/error-notifications-in-airflow/): Learn about different ways to let Airflow notify you of task and dag states, including notifier classes.
+    - [Airflow Apprise provider](https://airflow.apache.org/docs/apache-airflow-providers-apprise/stable/index.html): Documentation for the Airflow Apprise provider that integrates with many notification tools.
