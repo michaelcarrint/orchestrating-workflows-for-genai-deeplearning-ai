@@ -8,7 +8,14 @@ Welcome! This repository is the companion to the Orchestrating Workflows for Gen
 
 Follow these steps to get spin up to run Airflow and Weaviate locally:
 
-1. **Install the Astro CLI**: Follow the [installation instructions](https://www.astronomer.io/docs/astro/cli/install-cli/) to install the Astro CLI on your local machine. If you are on a mac you can install using [Homebrew](https://brew.sh/):
+1. **Fork and clone this repository**: Click the "Fork" button on the top right of this page to create a copy of this repository in your GitHub account. Then clone it to your local machine and enter its directory:
+
+    ```bash
+    git clone <your-forked-repo-url>
+    cd <your-forked-repo-name>
+    ``` 
+
+2. **Install the Astro CLI**: Follow the [installation instructions](https://www.astronomer.io/docs/astro/cli/install-cli/) to install the Astro CLI on your local machine. If you are on a mac you can install using [Homebrew](https://brew.sh/):
 
     ```bash
     brew install astro
@@ -19,13 +26,6 @@ Follow these steps to get spin up to run Airflow and Weaviate locally:
     ```bash
     astro --version
     ```
-
-2. **Fork and clone this repository**: Click the "Fork" button on the top right of this page to create a copy of this repository in your GitHub account. Then clone it to your local machine and enter its directory:
-
-    ```bash
-    git clone <your-forked-repo-url>
-    cd <your-forked-repo-name>
-    ``` 
 
 3. **Create a .env file**: Create a `.env` file in the root of your project directory. Copy the contents of the `.env.example` file into your new `.env` file. This file contains the environment variable Airflow uses to connect to Weaviate. If you'd like to connect to your own, cloud-hosted Weaviate instance you can provide your own connection details here. Note that you have the option to enter an OpenAI API key, but this is not required for the course pipelines to run.
 
@@ -88,7 +88,6 @@ This repository contains the following files and folders:
 - `README.md`: This document.
 - `requirements.txt`: Install Python packages needed for your project by adding them to this file. For this project `fastembed` and the [Airflow Weaviate Provider](https://airflow.apache.org/docs/apache-airflow-providers-weaviate/stable/index.html) are included. If you'd like to use other Python packages in your task code, add them here.
 - plugins: Add custom Airflow plugins for your project to this file.
-
 
 ### Resources
 
