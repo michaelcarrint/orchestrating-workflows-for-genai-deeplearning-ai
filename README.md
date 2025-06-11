@@ -1,6 +1,6 @@
 ## Orchestrating Workflows for GenAI Applications
 
-Welcome! This repository is the companion to the Orchestrating Workflows for GenAI Applications course on [Deeplearning.AI](https://www.deeplearning.ai/). It contains all the Airflow 3 dags your build throughout the course and can be run locally using the [Astro CLI](https://www.astronomer.io/docs/astro/cli/install-cli).
+Welcome! This repository is the companion to the [Orchestrating Workflows for GenAI Applications course on Deeplearning.AI](https://bit.ly/45P4WQN). It contains all the Airflow 3 dags your build throughout the course and can be run locally using the [Astro CLI](https://www.astronomer.io/docs/astro/cli/install-cli).
 
 ![Screenshot of the Airflow UI showing the dags in this repository](src/img/airflow_ui_screenshot.png)
 
