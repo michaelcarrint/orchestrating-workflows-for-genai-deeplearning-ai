@@ -1,5 +1,5 @@
 
-from airflow.sdk import dag, task
+from airflow.sdk import dag, task, chain
 
 @dag
 def my_new_dag():
