@@ -24,7 +24,7 @@ def my_second_new_dag():
         
     _my_task_1 = my_task_1()
     _my_task_2 = my_task_2()
-    _my_task_3 = my_task_3(num1=my_task_1, num2=my_task_2)
+    _my_task_3 = my_task_3(num1=_my_task_1, num2=_my_task_2)
     _my_task_4 = my_task_4()
 
     chain([_my_task_2, _my_task_3], _my_task_4)
